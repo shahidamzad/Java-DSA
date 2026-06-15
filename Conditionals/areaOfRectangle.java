@@ -26,10 +26,10 @@ public class areaOfRectangle {
             System.out.println("The area of the rectangle is " + perimeter);
         }
         if ( perimeter > area ) {
-            System.out.println("The perimeter  is greater than area ");
+            System.out.println("The perimeter  is greater than area " + perimeter);
         }
         if ( perimeter < area ) {
-            System.out.println("The perimeter  is less than area ");
+            System.out.println("The perimeter  is less than area "  + area);
         }
 
 
