@@ -17,9 +17,11 @@ public class dataTypes {
         System.out.println("enter a Long :" + (num4));
 
 
-        // Float and Double
+        // Float   range of 6
         float num5 = 3.14f;
         System.out.println("enter a Float : " + (num5));
+
+        // Double more the Float
 
         double num6 = 3.14;
         System.out.println("enter a Double : " + (num6));
@@ -30,6 +32,10 @@ public class dataTypes {
         System.out.println("enter a Character : " + (num7));
         char num8 = 'A';
         System.out.println("enter a Short : " + (num8));
+
+        // boolean
+        boolean  num9 = true;
+        System.out.println("enter a Integer : " + (num9));
 
     }
 }
