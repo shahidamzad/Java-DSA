@@ -10,11 +10,11 @@ public class typeCasting {
 
         System.out.println(5.0/2);
 
-        // int /double = doulble
+        // int /double = double
 
         System.out.println(5/2.0);
 
-        // double / bouble  = double
+        // double / double  = double
 
         System.out.println(5.0/2.0);
 
