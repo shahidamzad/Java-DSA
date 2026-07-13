@@ -2,7 +2,7 @@ package oops;
 
 class  A{
     int a ; String  b; boolean c;
-//    A(){
+//   A(){
 //        a= 1 ; b="raja" ; c=true;
 //
 //    }
