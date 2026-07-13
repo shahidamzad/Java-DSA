@@ -1,0 +1,13 @@
+package Loop;
+
+public class printOddNum {
+    static void main(String[] args) {
+        // print odd num in java
+        int i ;
+        for(i=1;i<=100;i++){
+            if(i%2 !=0){
+                System.out.println(i);
+            }
+        }
+    }
+}
