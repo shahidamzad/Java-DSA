@@ -7,7 +7,7 @@ public class Ap {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter N : ");
         int n = sc.nextInt();
-
+//using Math formulla
         // 1,3,5,7,9,11,13
 //        for(int i =1 ;   i <=2*n -1; i +=2){
 //            System.out.println(i);
