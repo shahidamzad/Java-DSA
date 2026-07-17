@@ -1,8 +1,7 @@
 package specialPattern.compositePattern;
 
 import java.util.Scanner;
-
-public class rhombusPattern {
+public class starPyramid {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter  n : ");
@@ -12,8 +11,8 @@ public class rhombusPattern {
             for (int j = 1; j <= n-i; j++) {// spaces
                 System.out.print(" "+ " ");
             }
-            for (int j = 1; j <=n ; j++) { // star square
-                System.out.print(j + " ");
+            for (int j = 1; j <=2 * i - 1 ; j++) { // star square
+                System.out.print("*" + " ");
 
             }
             System.out.println();
