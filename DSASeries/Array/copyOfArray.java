@@ -18,8 +18,7 @@ public class copyOfArray {
 
         // Deep copy
         int[] brr = Arrays.copyOf(arr,arr.length);
-        brr[0] = 15;
-        for(int ele : brr){
+        brr[0] = 15;        for(int ele : brr){
             System.out.print(ele + " ");
         }
 

@@ -8,7 +8,7 @@ public class passArrayToMethod {
 
         change(arr);
 
-        System.out.println(arr[0 ]);
+        System.out.println(arr[0]);
     }
 
     public static void change(int[] arr) {
