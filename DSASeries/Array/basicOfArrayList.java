@@ -17,16 +17,14 @@ public class basicOfArrayList {
         arr1.add(5 , 60); // arr[5]
 
         // output
-//        System.out.println(arr1);
+        System.out.println(arr1);
 
-        //for loop
-        for (int i = 0; i <=5; i++) {
-            System.out.print(arr1.get(i) + " "); // arr[i]
-        }
-        System.out.println();
+        System.out.println(arr1.size());
         arr1.set(4,0); // modify
-        for (int i = 0; i <=5; i++) {
-            System.out.print(arr1.get(i) + " "); // arr[i]
-        }
+        System.out.print(arr1);
+        System.out.println();
+        arr1.add(80); // push back in list
+        System.out.println(arr1.size());
+        System.out.println(arr1);
     }
 }
