@@ -4,10 +4,8 @@ import java.util.ArrayList;
 
 public class basicOfArrayList {
     public static void main(String[] args) {
-
                  // data type                     capacity of arr
         ArrayList<Integer> arr1 = new ArrayList<>(6);
-
         // initialize Arraylist
         arr1.add(0 , 10); // arr[0]
         arr1.add(1 , 20); // arr[1]
@@ -18,13 +16,17 @@ public class basicOfArrayList {
 
         // output
         System.out.println(arr1);
-
+        // array of size
         System.out.println(arr1.size());
-        arr1.set(4,0); // modify
+        // modify
+        arr1.set(4,0);
         System.out.print(arr1);
-        System.out.println();
-        arr1.add(80); // push back in list
-        System.out.println(arr1.size());
+        System.out.println(); // space
+        // push back in list
+        arr1.add(80);
         System.out.println(arr1);
+        // remove
+        arr1.remove(4);
+        System.out.print(arr1);
     }
 }
