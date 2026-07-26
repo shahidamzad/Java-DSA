@@ -9,7 +9,6 @@ public class mergeTwoShortedArray {
         int[] c = new int[a.length + b.length];
 
         int i = 0, j = 0, k = 0;
-
         // Merge both arrays
         while (i < a.length && j < b.length) {
             if (a[i] <= b[j]) {
@@ -21,7 +20,6 @@ public class mergeTwoShortedArray {
             }
             k++;
         }
-
         // Copy remaining elements of array a
         if (i==a.length) {
             while (j < b.length) {
@@ -30,7 +28,6 @@ public class mergeTwoShortedArray {
                 k++;
             }
         }
-
         // Copy remaining elements of array b
         if (j == b.length) {
             while (i < a.length) {
