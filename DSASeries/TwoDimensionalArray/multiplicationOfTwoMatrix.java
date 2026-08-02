@@ -1,7 +1,6 @@
 package DSASeries.TwoDimensionalArray;
 
 public class multiplicationOfTwoMatrix {
-
     public static void print(int[][] arr){
         int rows = arr.length;
         int cols = arr[0].length;
@@ -12,13 +11,10 @@ public class multiplicationOfTwoMatrix {
             System.out.println();
         }
         System.out.println();
-
     }
-
     static void main(String[] args) {
         int[][] a = {{1,2,3}, {4,5,7}};
         int[][] b = {{1,0,2,3}, {4,5,7,5},{2,6,7,6}};
-
         if (a[0].length != b.length) {
             System.out.print("multiplication not possible");
         }else {
