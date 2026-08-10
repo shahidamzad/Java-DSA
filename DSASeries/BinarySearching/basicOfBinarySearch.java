@@ -10,9 +10,7 @@ public class basicOfBinarySearch {
     static void main(String[] args) {
         int[] arr = {1, 2, 3, 4, 5, 6, 7, 8, 9};
         int target = 50;
-
         print(arr);
-
         int n = arr.length;
         int left = 0;
         int right = n - 1;
@@ -30,7 +28,6 @@ public class basicOfBinarySearch {
                 flag = true;
                 break;
             }
-
         }
         if (flag == true) System.out.println( " TARGET FOUND ");
         else System.out.println( " NOT FOUND ");
