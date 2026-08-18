@@ -1,6 +1,7 @@
 package DSASeries.Advance_sorting;
 
-public class marge_sort {
+public class inversionCount {
+    static int count;
     public static void print(int[] arr){
         for (int ele : arr){
             System.out.print(ele+" ");
@@ -16,7 +17,8 @@ public class marge_sort {
                 c[k++] = a[i++];
 
             }
-            else {
+            else { // a[i] > b[j]
+                count += (a.length-i); // extra line
                 c[k++] = b[j++];
             }
         }
@@ -29,6 +31,17 @@ public class marge_sort {
 
         }
     }
+
+//    public static void inversion(int[] a , int[] b){
+//        int i = 0  , j = 0;
+//        while (i < a.length && j < b.length){
+//            if (a[i] > b[j]){
+//                count += (a.length-i);
+//                j++;
+//            }
+//            else  i++;
+//        }
+//    }
 
     public static void margeSort(int[] arr){
         int n = arr.length;
@@ -50,15 +63,18 @@ public class marge_sort {
         margeSort(a);
         margeSort(b);
 
+        // inversion(a,b);
+
         // marge this "a" and "b"
         marge(a,b,arr);
 
     }
     static void main(String[] args) {
-        int[] arr = {103,56,89,5,75,62,30};
+        int[] arr = {109, 33, 89, 27, 60, 10, 70};
 
         print(arr);
         margeSort(arr);
         print(arr);
+        System.out.println(count);
     }
 }
