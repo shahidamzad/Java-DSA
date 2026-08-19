@@ -50,6 +50,8 @@ public class inversionCount {
         int[] a = new int[n/2];
         int[] b = new int[n-n/2];
 
+
+
         // copy past
         for(int i = 0; i < n/2; i++){
             a[i] = arr[i];
