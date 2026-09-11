@@ -3,7 +3,7 @@ package DSASeries.Linked_list;
 class SLL{
      Node head;
      Node tail;
-    int size;
+     int size;
 
     void insertAtTail(int val){
     Node temp = new Node(val);
@@ -117,7 +117,15 @@ void display(){
         }
         System.out.println();
     }
+
+    void size(){
+        System.out.println("List size : " + size);
+    }
 }
+
+
+
+
 public class implementational {
     static void main(String[] args) {
         SLL list = new SLL();
@@ -168,6 +176,8 @@ public class implementational {
         list.display();
 
         System.out.println(list.tail.val);
+        list.size();
+
 
     }
 }
