@@ -21,11 +21,15 @@ public class IntoductionOfStack {
         st.push(10);
         st.push(20);
         st.push(30);
+        st.push(40);
 
 
-        st.peek();
+        while(!st.isEmpty()) {
+            st.pop();
+        }
 
-        System.out.println(st.peek());
+        System.out.println(st);
+
        //  print();
 
     }
