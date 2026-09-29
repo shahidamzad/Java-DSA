@@ -23,20 +23,48 @@ public class sumOfTreeNodes {
 
         display(a);
         System.out.println();
-       // System.out.println(sum(a));
-        System.out.println(product(a));
+        System.out.println(sum(a));
+       System.out.println(product(a));
+        System.out.println(max(a));
+        System.out.println(min(a));
+        System.out.println(size(a));
+        System.out.println(level(a));
     }
 
+
+    // sum of all root number
     private static int sum(Node root) {
         if (root == null) return 0;
         return root.val + sum(root.left) + sum(root.right);
 
     }
 
+    // max number of root
+    private static int max(Node root) {
+        if (root == null) return Integer.MIN_VALUE;
+        int a= root.val;
+        int b= max(root.left);
+        int c= max(root.right);
+        return Math.max(a, Math.max(b, c)) ;
+
+    }
+
+    // minimum number of root
+    private static int min(Node root){
+        if (root == null) return Integer.MAX_VALUE;
+        int a= root.val;
+        int b= min(root.left);
+        int c= min(root.right);
+        return Math.min(a, Math.min(b, c)) ;
+    }
+
+    // product of all root
     private static long product(Node root) {
         if (root == null) return 1;
         return root.val * product(root.left) * root.val * product(root.right);
     }
+
+    // print all tree roots
 
     private static void display(Node root) {
         if (root == null) return;
@@ -44,5 +72,17 @@ public class sumOfTreeNodes {
         display(root.left);
         display(root.right);
 
+    }
+
+    // find the size of bs tree
+    private static int size(Node root) {
+        if (root == null) return 0;
+        return 1 + size(root.left) + size(root.right);
+    }
+
+    // level / height of binary tree
+    private static int level(Node root) {
+        if (root == null) return 0;
+        return 1+ Math.max(level(root.left), level(root.right));
     }
 }
